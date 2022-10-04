@@ -1,0 +1,173 @@
+body {
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 6px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid gainsboro;
+}
+
+img {
+  max-width: 7em;
+  height: auto;
+  justify-self: center;
+}
+
+p,h1,h2,h3 {
+  color: gray;
+}
+
+header  {
+  max-width: 1200px;
+  margin: 20px;
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: fit-content(25%) 1fr;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+  text-align: start;
+  font-size: x-large;
+}
+
+article.column-header, article.add-new-products {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: 1px solid gainsboro;
+  margin: 0px 20px;
+  background: #ebefef;
+}
+
+article.add-list {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: 1px solid gainsboro;
+  margin: 0px 20px;
+  margin-bottom: 40px;
+  background: #f8f8f852;
+}
+
+article.list {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0px 20px;
+}
+
+article form {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0px 20px;
+}
+
+article.column-header, article.add-new-products {
+  border: none;
+  border: 1px solid #c5b6b6;
+}
+
+article.edit-list{
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: 1px solid gainsboro;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+  background: #f8f8f852;
+}
+
+  button {
+    background-color: #2ba8d2;
+    border: 1px solid #23addb;
+    border-radius: 10px;
+    width: 100px;  
+    min-width: 60px; 
+    min-width: 70px; 
+    height: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    justify-self: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .modify {
+    margin-left: 25px;
+    margin-right: 5px;
+    width: 50px;
+  }
+  .cancel {
+    margin-right: 5px;
+    width: 50px;
+  }
+  .inputNameField {    
+    height: 40px;
+    min-width: 180px;
+    max-width: 260px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .inputAmountField {    
+    height: 40px;
+    max-width: 80px;
+    min-width: 40px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    text-align: center;
+  }
+
+@media only screen and (min-width: 960px) {
+  button {
+    background-color: #2ba8d2;
+    border: 1px solid #23addb;
+    border-radius: 10px;
+    width: 100px;   
+    height: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    justify-self: center;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .modify {
+    margin-left: 25px;
+    margin-right: 5px;
+    width: 80px;
+  }
+  .cancel {
+    margin-right: 5px;
+    width: 80px;
+  }
+  .inputNameField {    
+    height: 40px;
+    min-width: 434px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .inputAmountField {    
+    height: 40px;
+    max-width: 150px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
